@@ -29,7 +29,7 @@ public class Video {
     public Genre getGenre() {return genre;}
 
     public void play() {
-        System.out.println("Now plays: '" + name + "' from " + author + ". It plays " + durationInSeconds + " seconds.");
+        System.out.println("Now plays: '" + name + "' from " + author + ". It plays " + durationInSeconds + " seconds. Genre of this video: " + genre.getName() + ".");
         System.out.println("Link on this video: " + link);
     }
 
