@@ -1,9 +1,5 @@
 package ru.vsu.cs.sis.task1;
 
-import java.sql.Time;
-import java.util.Date;
-import java.util.Timer;
-
 public class Bid {
     private String customerName;
     private static final int minPriceForMessage = 5000;
@@ -37,7 +33,7 @@ public class Bid {
     }
     public void printMessage() {
         if (isImportant) {
-            System.out.println("Срочное объявление от " + customerName + "! " + message);
+            System.out.println("Срочное объявление (заявка) от " + customerName + "! " + message);
         } else {
             System.out.println("Hello, dear user! We get a new bid from '" + customerName + "'. The message: '" + message + "'.");
         }

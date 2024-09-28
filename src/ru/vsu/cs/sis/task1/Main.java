@@ -27,7 +27,6 @@ public class Main {
         musicalVideo.play();
         makeSplitter();
         musicalVideo.dislike();
-        makeSplitter();
 
         AdvertisementVideo ad = new AdvertisementVideo("Стоматология онлайн реклама", "Voronezh36",
                 15, "https://ktoprochitaltotmolodec228.com", new Genre("Advertisement", 0), "Bobr kurva");

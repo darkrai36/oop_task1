@@ -19,17 +19,22 @@ public class Video {
     public String getName() {
         return name;
     }
+
     public String getChannel() {return channel;}
+
     public int getDurationInSeconds() {
         return durationInSeconds;
     }
+
     public String getLink() {
         return link;
     }
+
     public Genre getGenre() {return genre;}
 
     public void play() {
-        System.out.println("Now plays: '" + name + "' from channel '" + channel + "'. It plays " + durationInSeconds + " seconds. Genre of this video: " + genre.getName() + ".");
+        System.out.println("Now plays: '" + name + "' from channel '" + channel + "'. It plays "
+                + durationInSeconds + " seconds. Genre of this video: " + genre.getName() + ".");
         System.out.println("Link on this video: " + link);
     }
 
