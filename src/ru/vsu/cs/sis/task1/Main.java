@@ -22,6 +22,9 @@ public class Main {
         importantBid.printMessage();
         makeSplitter();
 
-
+        MusicalVideo musicalVideo = new MusicalVideo("Польская корова", "Polish memes", 123,
+                "https://youtube.com", new Genre("Music", 38), "rammstein");
+        musicalVideo.playMusicalVideo();
+        makeSplitter();
     }
 }
