@@ -2,15 +2,15 @@ package ru.vsu.cs.sis.task1;
 
 public class Video {
     private String name;//Название видео
-    private String author;
+    private String channel;
     private int durationInSeconds; //Длительность в секундах
     private String link;//Ссылка на видео
     private Genre genre;
 
 
-    public Video(String name, String author, int durationInSeconds, String link, Genre genre) {
+    public Video(String name, String channel, int durationInSeconds, String link, Genre genre) {
         this.name = name;
-        this.author = author;
+        this.channel = channel;
         this.durationInSeconds = durationInSeconds;
         this.link = link;
         this.genre = genre;
@@ -19,7 +19,7 @@ public class Video {
     public String getName() {
         return name;
     }
-    public String getAuthor() {return author;}
+    public String getChannel() {return channel;}
     public int getDurationInSeconds() {
         return durationInSeconds;
     }
@@ -29,7 +29,7 @@ public class Video {
     public Genre getGenre() {return genre;}
 
     public void play() {
-        System.out.println("Now plays: '" + name + "' from " + author + ". It plays " + durationInSeconds + " seconds. Genre of this video: " + genre.getName() + ".");
+        System.out.println("Now plays: '" + name + "' from channel '" + channel + "'. It plays " + durationInSeconds + " seconds. Genre of this video: " + genre.getName() + ".");
         System.out.println("Link on this video: " + link);
     }
 
