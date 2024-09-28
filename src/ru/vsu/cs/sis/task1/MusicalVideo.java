@@ -38,14 +38,11 @@ public class MusicalVideo extends Video {
 
     @Override
     public void play() {
-        super.play();
+        System.out.println("Hey, users! Now plays song '" + getName() + "' by " + getArtist());
     }
 
     @Override
     public void pause() {
         super.pause();
-    }
-    public void playMusicalVideo() {
-        System.out.println("Hey, users! Now plays song '" + getName() + "' by " + getArtist());
     }
 }
