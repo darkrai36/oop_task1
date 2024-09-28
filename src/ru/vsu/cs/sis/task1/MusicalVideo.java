@@ -32,6 +32,10 @@ public class MusicalVideo extends Video {
         return super.getGenre();
     }
 
+    public String getArtist() {
+        return artist;
+    }
+
     @Override
     public void play() {
         super.play();
@@ -40,5 +44,8 @@ public class MusicalVideo extends Video {
     @Override
     public void pause() {
         super.pause();
+    }
+    public void playMusicalVideo() {
+        System.out.println("Hey, users! Now plays song '" + getName() + "' by " + getArtist());
     }
 }
