@@ -36,4 +36,10 @@ public class Video {
     public void pause() {
         System.out.println("You get a pause. Please, tap on 'Play' again to continue watch video!");
     }
+    public void like() {
+        System.out.println("Thanks for watching our video!");
+    }
+    public void dislike() {
+        System.out.println("Oh, that's so sad.... ;(");
+    }
 }

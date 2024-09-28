@@ -45,4 +45,14 @@ public class MusicalVideo extends Video {
     public void pause() {
         super.pause();
     }
+
+    @Override
+    public void like() {
+        super.like();
+    }
+
+    @Override
+    public void dislike() {
+        super.dislike();
+    }
 }
