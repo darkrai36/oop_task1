@@ -9,6 +9,7 @@ public class Advertisement implements AdvertisementImp{
     private static int counter;
     private static int minPriceForOrder;
 
+    //todo Реализовать классы-наследники для рекламы с целью конкретизации конкретных областей
     static {
         counter = 1;
         minPriceForOrder = 500;

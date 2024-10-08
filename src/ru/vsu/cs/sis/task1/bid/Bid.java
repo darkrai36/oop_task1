@@ -1,6 +1,7 @@
 package ru.vsu.cs.sis.task1.bid;
 
 public class Bid {
+    //TODO Полностью переделать класс Bid, раз уж это все-таки какая-то заявка или ставка. В качестве текущей альтернативы можно действительно сделать
     private String customerName;
     private static final int minPriceForMessage = 5000;
     private int priceFromCustomer;
