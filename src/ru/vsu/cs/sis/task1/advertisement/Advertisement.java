@@ -11,8 +11,11 @@ public class Advertisement implements AdvertisementImp{
 
     //todo Реализовать классы-наследники для рекламы с целью конкретизации конкретных областей
     static {
-        counter = 1;
-        minPriceForOrder = 500;
+        counter = 0;
+    }
+
+    {
+        counter++;
     }
 
     public Advertisement(String customer, String description, String link, int duration, int priceFromCustomer) {
@@ -22,7 +25,6 @@ public class Advertisement implements AdvertisementImp{
         this.duration = duration;
         this.priceFromCustomer = priceFromCustomer;
         minPriceForOrder = 500 * counter;
-        counter++;
     }
 
     public String getCustomer() {
@@ -59,5 +61,17 @@ public class Advertisement implements AdvertisementImp{
         System.out.println("Now you will view an ad from " + customer);
         System.out.println("It's shown for " + duration + " seconds.");
         System.out.println("Message from " + customer + ": " + description);
+    }
+
+    @Override
+    public void orderAd() {
+        if (getPriceFromCustomer() > getMinPriceForOrder()) {
+            showAd();
+            System.out.println("Current min price is " + Advertisement.getMinPriceForOrder());
+            System.out.println("Your price is " + getPriceFromCustomer());
+        } else {
+            System.out.println("Pay more money! Current min price is " + Advertisement.getMinPriceForOrder());
+            System.out.println("Your price is " + getPriceFromCustomer());
+        }
     }
 }
