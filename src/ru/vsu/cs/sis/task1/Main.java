@@ -1,5 +1,13 @@
 package ru.vsu.cs.sis.task1;
 
+import ru.vsu.cs.sis.task1.advertisement.Advertisement;
+import ru.vsu.cs.sis.task1.advertisement.AdvertisementImp;
+import ru.vsu.cs.sis.task1.bid.Bid;
+import ru.vsu.cs.sis.task1.genre.Genre;
+import ru.vsu.cs.sis.task1.video.AdvertisementVideo;
+import ru.vsu.cs.sis.task1.video.MusicalVideo;
+import ru.vsu.cs.sis.task1.video.Video;
+
 public class Main {
     public static void makeSplitter() {
         System.out.println("===============================================");
@@ -31,6 +39,15 @@ public class Main {
         AdvertisementVideo ad = new AdvertisementVideo("Стоматология онлайн реклама", "Voronezh36",
                 15, "https://ktoprochitaltotmolodec228.com", new Genre("Advertisement", 0), "Bobr kurva");
         ad.play();
+        makeSplitter();
+
+        Advertisement firstAd = new Advertisement("VK", "This is our ad. Would you like it?",
+                "vk.com", 45, 499);
+        AdvertisementImp.orderAd(firstAd);
+        makeSplitter();
+
+        Advertisement second = new Advertisement("adad", "adasd", "vk.com", 45, 499);
+        AdvertisementImp.orderAd(second);
         makeSplitter();
     }
 }

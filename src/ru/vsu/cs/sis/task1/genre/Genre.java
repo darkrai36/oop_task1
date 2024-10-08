@@ -1,4 +1,4 @@
-package ru.vsu.cs.sis.task1;
+package ru.vsu.cs.sis.task1.genre;
 
 public class Genre {
     private String name; //Название жанра

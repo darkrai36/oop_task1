@@ -1,4 +1,6 @@
-package ru.vsu.cs.sis.task1;
+package ru.vsu.cs.sis.task1.video;
+
+import ru.vsu.cs.sis.task1.genre.Genre;
 
 public class MusicalVideo extends Video {
     private String artist;

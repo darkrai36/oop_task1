@@ -1,4 +1,4 @@
-package ru.vsu.cs.sis.task1;
+package ru.vsu.cs.sis.task1.bid;
 
 public class Bid {
     private String customerName;
