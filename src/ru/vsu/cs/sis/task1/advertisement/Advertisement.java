@@ -8,9 +8,11 @@ public class Advertisement implements AdvertisementImp{
     private int priceFromCustomer;
     private static int counter;
     private static int minPriceForOrder;
+    private static final int maxPriceForOrder = 5000;
 
     static {
         counter = 0;
+        minPriceForOrder = 500;
     }
 
     {
@@ -23,7 +25,7 @@ public class Advertisement implements AdvertisementImp{
         this.link = link;
         this.duration = duration;
         this.priceFromCustomer = priceFromCustomer;
-        minPriceForOrder = 500 * counter;
+        minPriceForOrder = counter > 10 ? maxPriceForOrder :  counter * 500;
     }
 
     public String getCustomer() {
