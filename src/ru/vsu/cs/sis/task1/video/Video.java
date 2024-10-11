@@ -6,13 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Video implements VideoImp {
+    //TODO 1) Для этого класса можно сделать возможность создания плейлиста. А может, и перенести это все в отдельный класс...
     private String name;
     private String channel;
     private int durationInSeconds;
     private String link;
     private Genre genre;
     private List<String> comments;
+    private static List<Video> playlist;
 
+    static {
+        playlist = new ArrayList<>();
+    }
 
     public Video(String name, String channel, int durationInSeconds, String link, Genre genre) {
         this.name = name;
@@ -41,6 +46,18 @@ public class Video implements VideoImp {
 
     public List<String> getComments() {
         return comments;
+    }
+    public static List<Video> getPlaylist() {
+        return playlist;
+    }
+    public static void addVideoToPlaylist(Video video) {
+        playlist.add(video);
+    }
+
+    public static void playlistToString(List<Video> playlist) {
+        for (Video video : playlist) {
+            System.out.println("Video: " + video.getName() + ", from channel " + video.getChannel());
+        }
     }
 
     @Override
